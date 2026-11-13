@@ -1,0 +1,40 @@
+# Manual requests for an IDE HTTP client. Start the application with DB_* and dev.
+# First list accounts, then replace the IDs below with the returned identifiers.
+# The optional demo-data.sql script does not guarantee fixed numeric IDs.
+@baseUrl = http://localhost:8080
+@sourceAccountId = 1
+@destinationAccountId = 2
+# Replace with the reference returned by the POST request.
+@reference = 00000000-0000-0000-0000-000000000000
+
+### List accounts
+GET {{baseUrl}}/api/accounts
+Accept: application/json
+
+### Account snapshot
+GET {{baseUrl}}/api/accounts/{{sourceAccountId}}
+Accept: application/json
+
+### Transfer money (changes balances when executed manually)
+POST {{baseUrl}}/api/transfers
+Content-Type: application/json
+
+{
+  "sourceAccountId": {{sourceAccountId}},
+  "destinationAccountId": {{destinationAccountId}},
+  "amount": 25.00
+}
+
+### Receipt by returned reference
+GET {{baseUrl}}/api/transfers/{{reference}}
+Accept: application/json
+
+### Sent and received transfers, newest first
+GET {{baseUrl}}/api/accounts/{{sourceAccountId}}/transfers
+Accept: application/json
+
+### OpenAPI JSON
+GET {{baseUrl}}/v3/api-docs
+
+### Swagger UI (follow redirect in a browser)
+GET {{baseUrl}}/swagger-ui.html

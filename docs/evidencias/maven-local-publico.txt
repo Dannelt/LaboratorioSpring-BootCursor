@@ -1,0 +1,194 @@
+VERSIÓN PÚBLICA DEPURADA del registro local aportado por el estudiante.
+Se sustituyeron rutas personales y el usuario local por marcadores explícitos.
+Los resultados, fechas y evidencias técnicas de las pruebas se conservaron.
+Original conservado localmente en maven-local.txt y excluido de Git.
+Comando confirmado por el estudiante: .\mvnw.cmd -B test 2>&1 | Tee-Object -FilePath docs/evidencias/maven-local.txt
+Entorno confirmado: perfil dev, DB_* configuradas y RUN_POSTGRES_TESTS=true.
+
+[INFO] Scanning for projects...
+[INFO] Loaded 24467 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO]
+[INFO] ---------------------< com.tdea:laboratoriobanco >----------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- resources:3.5.0:resources (default-resources) @ laboratoriobanco ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO]
+[INFO] --- compiler:3.15.0:compile (default-compile) @ laboratoriobanco ---
+[INFO] Loaded 64 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ laboratoriobanco ---
+[INFO] skip non existing resourceDirectory [PERFIL_LOCAL]\Desktop\Semestre 4\Dise±o de sistema\Laboratorio 1\LaboratorioSpring-BootCursor\src\test\resources
+[INFO]
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ laboratoriobanco ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- surefire:3.5.6:test (default-test) @ laboratoriobanco ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.tdea.laboratoriobanco.controller.BankingApiTest
+22:10:19.511 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tdea.laboratoriobanco.controller.BankingApiTest]: BankingApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:10:19.678 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tdea.laboratoriobanco.LaboratoriobancoApplication for test class com.tdea.laboratoriobanco.controller.BankingApiTest
+22:10:19.740 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tdea.laboratoriobanco.controller.BankingApiTest]: BankingApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:10:19.742 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tdea.laboratoriobanco.LaboratoriobancoApplication for test class com.tdea.laboratoriobanco.controller.BankingApiTest
+22:10:19.809 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-12T22:10:20.036-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.controller.BankingApiTest          : Starting BankingApiTest using Java 25.0.5 with PID 31264 (started by [USUARIO_LOCAL] in [DIRECTORIO_DEL_PROYECTO])
+2026-11-12T22:10:20.037-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.controller.BankingApiTest          : The following 1 profile is active: "dev"
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically ([PERFIL_LOCAL]\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.15\byte-buddy-agent-1.18.15.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-11-12T22:10:22.259-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-12T22:10:22.259-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-12T22:10:22.261-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-11-12T22:10:22.287-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.controller.BankingApiTest          : Started BankingApiTest in 2.488 seconds (process running for 3.579)
+2026-11-12T22:10:22.290-05:00  WARN 31264 --- [laboratoriobanco] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-11-12T22:10:22.291-05:00  WARN 31264 --- [laboratoriobanco] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-11-12T22:10:23.013-05:00  WARN 31264 --- [laboratoriobanco] [           main] o.s.web.servlet.PageNotFound             : Request method 'DELETE' is not supported
+2026-11-12T22:10:23.382-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 332 ms
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.117 s -- in com.tdea.laboratoriobanco.controller.BankingApiTest
+[INFO] Running com.tdea.laboratoriobanco.controller.DevelopmentCorsTest
+2026-11-12T22:10:23.433-05:00  INFO 31264 --- [laboratoriobanco] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tdea.laboratoriobanco.controller.DevelopmentCorsTest]: DevelopmentCorsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-12T22:10:23.451-05:00  INFO 31264 --- [laboratoriobanco] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tdea.laboratoriobanco.LaboratoriobancoApplication for test class com.tdea.laboratoriobanco.controller.DevelopmentCorsTest
+2026-11-12T22:10:23.453-05:00  INFO 31264 --- [laboratoriobanco] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tdea.laboratoriobanco.controller.DevelopmentCorsTest]: DevelopmentCorsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-12T22:10:23.465-05:00  INFO 31264 --- [laboratoriobanco] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tdea.laboratoriobanco.LaboratoriobancoApplication for test class com.tdea.laboratoriobanco.controller.DevelopmentCorsTest
+2026-11-12T22:10:23.473-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-12T22:10:23.502-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.controller.DevelopmentCorsTest     : Starting DevelopmentCorsTest using Java 25.0.5 with PID 31264 (started by [USUARIO_LOCAL] in [DIRECTORIO_DEL_PROYECTO])
+2026-11-12T22:10:23.502-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.controller.DevelopmentCorsTest     : The following 1 profile is active: "dev"
+2026-11-12T22:10:23.702-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-12T22:10:23.702-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-12T22:10:23.703-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-11-12T22:10:23.710-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.controller.DevelopmentCorsTest     : Started DevelopmentCorsTest in 0.238 seconds (process running for 5.002)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 s -- in com.tdea.laboratoriobanco.controller.DevelopmentCorsTest
+[INFO] Running com.tdea.laboratoriobanco.LaboratoriobancoApplicationTests
+2026-11-12T22:10:23.751-05:00  INFO 31264 --- [laboratoriobanco] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tdea.laboratoriobanco.LaboratoriobancoApplicationTests]: LaboratoriobancoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-12T22:10:23.759-05:00  INFO 31264 --- [laboratoriobanco] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tdea.laboratoriobanco.LaboratoriobancoApplication for test class com.tdea.laboratoriobanco.LaboratoriobancoApplicationTests
+2026-11-12T22:10:23.760-05:00  INFO 31264 --- [laboratoriobanco] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tdea.laboratoriobanco.LaboratoriobancoApplicationTests]: LaboratoriobancoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-12T22:10:23.761-05:00  INFO 31264 --- [laboratoriobanco] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tdea.laboratoriobanco.LaboratoriobancoApplication for test class com.tdea.laboratoriobanco.LaboratoriobancoApplicationTests
+2026-11-12T22:10:23.765-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-12T22:10:23.784-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.LaboratoriobancoApplicationTests   : Starting LaboratoriobancoApplicationTests using Java 25.0.5 with PID 31264 (started by [USUARIO_LOCAL] in [DIRECTORIO_DEL_PROYECTO])
+2026-11-12T22:10:23.785-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.LaboratoriobancoApplicationTests   : The following 1 profile is active: "dev"
+2026-11-12T22:10:24.034-05:00  INFO 31264 --- [laboratoriobanco] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-12T22:10:24.082-05:00  INFO 31264 --- [laboratoriobanco] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2026-11-12T22:10:24.281-05:00  INFO 31264 --- [laboratoriobanco] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-12T22:10:24.338-05:00  INFO 31264 --- [laboratoriobanco] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-12T22:10:24.581-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-12T22:10:24.615-05:00  INFO 31264 --- [laboratoriobanco] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-12T22:10:24.878-05:00  INFO 31264 --- [laboratoriobanco] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62a9e9bf
+2026-11-12T22:10:24.880-05:00  INFO 31264 --- [laboratoriobanco] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-12T22:10:24.959-05:00  INFO 31264 --- [laboratoriobanco] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/laboratoriobanco]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.12
+	Default catalog/schema: laboratoriobanco/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-12T22:10:25.723-05:00  INFO 31264 --- [laboratoriobanco] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-12T22:10:25.791-05:00  INFO 31264 --- [laboratoriobanco] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-12T22:10:25.861-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-12T22:10:26.606-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.LaboratoriobancoApplicationTests   : Started LaboratoriobancoApplicationTests in 2.842 seconds (process running for 7.898)
+2026-11-12T22:10:26.607-05:00  WARN 31264 --- [laboratoriobanco] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-11-12T22:10:26.607-05:00  WARN 31264 --- [laboratoriobanco] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.864 s -- in com.tdea.laboratoriobanco.LaboratoriobancoApplicationTests
+[INFO] Running com.tdea.laboratoriobanco.service.BankingQueryServiceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 s -- in com.tdea.laboratoriobanco.service.BankingQueryServiceTest
+[INFO] Running com.tdea.laboratoriobanco.service.BankTransferPostgresTest
+2026-11-12T22:10:26.846-05:00  INFO 31264 --- [laboratoriobanco] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tdea.laboratoriobanco.service.BankTransferPostgresTest]: BankTransferPostgresTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-12T22:10:26.858-05:00  INFO 31264 --- [laboratoriobanco] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tdea.laboratoriobanco.LaboratoriobancoApplication for test class com.tdea.laboratoriobanco.service.BankTransferPostgresTest
+2026-11-12T22:10:26.859-05:00  INFO 31264 --- [laboratoriobanco] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tdea.laboratoriobanco.service.BankTransferPostgresTest]: BankTransferPostgresTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-12T22:10:26.860-05:00  INFO 31264 --- [laboratoriobanco] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tdea.laboratoriobanco.LaboratoriobancoApplication for test class com.tdea.laboratoriobanco.service.BankTransferPostgresTest
+2026-11-12T22:10:26.862-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-12T22:10:26.879-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.service.BankTransferPostgresTest   : Starting BankTransferPostgresTest using Java 25.0.5 with PID 31264 (started by [USUARIO_LOCAL] in [DIRECTORIO_DEL_PROYECTO])
+2026-11-12T22:10:26.879-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.service.BankTransferPostgresTest   : The following 1 profile is active: "dev"
+2026-11-12T22:10:27.021-05:00  INFO 31264 --- [laboratoriobanco] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-12T22:10:27.032-05:00  INFO 31264 --- [laboratoriobanco] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2026-11-12T22:10:27.078-05:00  INFO 31264 --- [laboratoriobanco] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-12T22:10:27.100-05:00  INFO 31264 --- [laboratoriobanco] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-12T22:10:27.101-05:00  INFO 31264 --- [laboratoriobanco] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-11-12T22:10:27.142-05:00  INFO 31264 --- [laboratoriobanco] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@17088b23
+2026-11-12T22:10:27.142-05:00  INFO 31264 --- [laboratoriobanco] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-11-12T22:10:27.156-05:00  INFO 31264 --- [laboratoriobanco] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/laboratoriobanco]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.12
+	Default catalog/schema: laboratoriobanco/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-12T22:10:27.215-05:00  INFO 31264 --- [laboratoriobanco] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-12T22:10:27.232-05:00  INFO 31264 --- [laboratoriobanco] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-12T22:10:27.373-05:00  INFO 31264 --- [laboratoriobanco] [           main] c.t.l.service.BankTransferPostgresTest   : Started BankTransferPostgresTest in 0.511 seconds (process running for 8.665)
+2026-11-12T22:10:27.373-05:00  WARN 31264 --- [laboratoriobanco] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-11-12T22:10:27.374-05:00  WARN 31264 --- [laboratoriobanco] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.876 s -- in com.tdea.laboratoriobanco.service.BankTransferPostgresTest
+[INFO] Running com.tdea.laboratoriobanco.service.BankTransferServiceTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in com.tdea.laboratoriobanco.service.BankTransferServiceTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 56, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.960 s
+[INFO] Finished at: 2026-11-12T22:10:27-05:00
+[INFO] ------------------------------------------------------------------------
