@@ -257,7 +257,7 @@ Listar cuentas, elegir ID distintos, ejecutar POST y consultar UUID e historial.
 
 Versionar código, Wrapper, scripts, documentación, package-lock.json y .env.example. Excluir secretos, .env.local, target, node_modules, dist, logs, claves y respaldos. .gitignore no elimina secretos ya versionados ni reemplaza la revisión del contenido preparado.
 
-La publicación queda pendiente del estudiante: esta revisión no realiza commits ni push.
+El proyecto está publicado en [GitHub: Dannelt/LaboratorioSpring-BootCursor](https://github.com/Dannelt/LaboratorioSpring-BootCursor), en la rama `main`. El [commit de entrega ca5ae61](https://github.com/Dannelt/LaboratorioSpring-BootCursor/commit/ca5ae6179bac60b7cc4c9f23a209aa9a42adc5e4) contiene el laboratorio completo y su documentación académica.
 
 ## Entregables y referencias
 

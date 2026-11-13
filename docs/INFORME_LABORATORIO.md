@@ -11,8 +11,8 @@
 | Programa académico | Ingeniería |
 | Semestre | 4 |
 | Fecha de entrega | 12 de noviembre de 2026 |
-| Publicación | Pendiente de autorización; repositorio existente con remoto origin |
-| Commit de entrega | No creado; no se ha autorizado commit ni push |
+| Publicación | [Dannelt/LaboratorioSpring-BootCursor](https://github.com/Dannelt/LaboratorioSpring-BootCursor), rama main |
+| Commit de entrega | [ca5ae61](https://github.com/Dannelt/LaboratorioSpring-BootCursor/commit/ca5ae6179bac60b7cc4c9f23a209aa9a42adc5e4) — Complete Nexo banking laboratory and academic documentation |
 
 **Título del proyecto:** Nexo — Laboratorio de Transferencias Bancarias.
 
@@ -244,7 +244,7 @@ El repositorio ignora target, node_modules, dist, logs, .env y archivos locales,
 
 La revisión de patrones no sustituye una auditoría exhaustiva. Antes de publicar se deben revisar los archivos preparados mediante git diff --cached. Ignorar archivos no elimina datos que ya estuvieran en el historial. El código de pruebas contiene textos ficticios de secretos para verificar que no se filtren: no son credenciales reales.
 
-Al comenzar esta etapa la rama era main, existía el remoto origin y solo README.md estaba versionado. Los archivos de implementación estaban sin seguimiento. No se hizo commit, push ni se creó otro repositorio; la publicación requerida sigue pendiente de autorización y revisión del estudiante.
+Al comenzar la preparación de entrega, la rama era main, existía el remoto origin y solo README.md estaba versionado. Tras la autorización del estudiante se creó y publicó el commit ca5ae6179bac60b7cc4c9f23a209aa9a42adc5e4, con el mensaje «Complete Nexo banking laboratory and academic documentation». La entrega quedó publicada en el repositorio existente, sin crear otro repositorio ni utilizar force push. Se comprobó que main local coincidía con origin/main después del push. El commit de entrega identifica esa versión del laboratorio; las correcciones documentales posteriores se registran en commits separados.
 
 ## 15. Conclusiones
 
